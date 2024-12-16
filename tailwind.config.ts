@@ -8,7 +8,7 @@ export default {
 	],
 	theme: {
 		extend: {
-			colors: {},
+			colors: { "white-smoke": "#F5F5F5" },
 		},
 	},
 	plugins: [],
