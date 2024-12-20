@@ -5,7 +5,7 @@ import SearchBar from "./SearchBar";
 
 export default function NavBar() {
 	return (
-		<nav className="flex items-center justify-between  w-full px-[135px] pt-10 pb-4 border-b-0.5 border-gray-300">
+		<nav className="flex items-center justify-between  w-full px-[135px] pt-10 pb-4 border-b-0.5 border-gray-300 bg-white">
 			<Logo />
 			<div>
 				<ul className="flex flex-row gap-12 ">
