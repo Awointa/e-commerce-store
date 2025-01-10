@@ -1,9 +1,11 @@
 import ArrowButton from "./ArrowButton";
+import ProductCardSlider from "./ProductCardSlider";
 import SectionLabel from "./SectionLabel";
+import PrimaryButton from "./PrimaryButton";
 
 const FlashSalesSection = () => {
 	return (
-		<div className="mt-[100px]">
+		<section className="mt-[100px] flex flex-col border-b-gray-300 border-b-0.5">
 			<SectionLabel text="Today's" />
 			<div className="flex items-center justify-between pt-3">
 				<div className="flex items-center gap-[87px]">
@@ -37,7 +39,13 @@ const FlashSalesSection = () => {
 					<ArrowButton type="right" />
 				</div>
 			</div>
-		</div>
+			<div className="pt-10">
+				<ProductCardSlider />
+			</div>
+			<div className="mx-auto py-[60px]">
+				<PrimaryButton />
+			</div>
+		</section>
 	);
 };
 
