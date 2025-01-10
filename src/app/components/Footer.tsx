@@ -38,7 +38,7 @@ const Footer = () => {
 				</div>
 			</div>
 			<div className=" text-center pb-6 text-ash-smoke">
-				&#169; Copyright Rimel 2022. All right reserved{" "}
+				&#169; Copyright Awointa 2024. All right reserved{" "}
 			</div>
 		</div>
 	);
