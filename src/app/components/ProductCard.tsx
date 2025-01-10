@@ -7,12 +7,25 @@ import Image from "next/image";
 import joystickImage from "./ProductImages/frame_611.png";
 
 import StarRating from "./StarRating";
+import HeartIcon from "../../../svgs/HeartIcon";
+import FillEyeIcon from "../../../svgs/FillEyeIcon";
 
 const ProductCard = () => {
 	return (
 		<div className="max-w-[270px]">
-			<div className="bg-white-smoke px-10 py-[35px]">
-				<div className="w-[172px] h-[152px] relative mx-auto">
+			<div className="bg-white-smoke px-10 py-[35px] relative">
+				<div className="bg-gino-red text-white text-[12px] px-3 py-2 absolute top-3 left-3 rounded-md">
+					- 40%
+				</div>
+				<div className="flex flex-col gap-2 absolute top-3 right-3">
+					<span className="p-[10px] bg-white rounded-full flex items-center justify-center">
+						<HeartIcon />
+					</span>
+					<span className="p-[10px] bg-white rounded-full flex items-center justify-center">
+						<FillEyeIcon />
+					</span>
+				</div>
+				<div className="w-[172px] h-[152px] relative mx-auto py-[35px] px-10">
 					<Image src={joystickImage} fill alt="image of a joystick" />
 				</div>
 			</div>
