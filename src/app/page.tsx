@@ -6,6 +6,7 @@ import slide1 from "./SliderImages/slide1.png";
 import slide2 from "./SliderImages/slide1.png";
 import slide3 from "./SliderImages/slide1.png";
 import FlashSalesSection from "./components/FlashSalesSection";
+import CategoriesSection from "./components/CategoriesSection";
 
 const images = [slide1, slide2, slide3];
 
@@ -19,6 +20,7 @@ function page() {
 				</div>
 			</div>
 			<FlashSalesSection />
+			<CategoriesSection />
 		</div>
 	);
 }
