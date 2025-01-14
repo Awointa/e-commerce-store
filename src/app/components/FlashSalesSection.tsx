@@ -43,7 +43,7 @@ const FlashSalesSection = () => {
 				<ProductCardSlider />
 			</div>
 			<div className="mx-auto py-[60px]">
-				<PrimaryButton />
+				<PrimaryButton text="view all products" />
 			</div>
 		</section>
 	);
