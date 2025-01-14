@@ -1,9 +1,13 @@
 import React from "react";
 
-const PrimaryButton = () => {
+interface PrimaryButtonProps {
+	text: string;
+}
+
+const PrimaryButton = ({ text }: PrimaryButtonProps) => {
 	return (
 		<button className="bg-gino-red text-white-smoke text-[16px] px-12 py-4 rounded-md">
-			view all products
+			{text}
 		</button>
 	);
 };
