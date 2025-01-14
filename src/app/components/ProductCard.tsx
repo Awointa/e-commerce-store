@@ -7,13 +7,14 @@ import Image from "next/image";
 import joystickImage from "./ProductImages/frame_611.png";
 
 import StarRating from "./StarRating";
-import HeartIcon from "../../../svgs/HeartIcon";
-import FillEyeIcon from "../../../svgs/FillEyeIcon";
+import HeartIcon from "../../../svgs/WishListIcon";
+import FillEyeIcon from "../../../svgs/ViewIcon";
+import AddToCartButton from "./AddToCartButton";
 
 const ProductCard = () => {
 	return (
-		<div className="max-w-[270px]">
-			<div className="bg-white-smoke px-10 py-[35px] relative">
+		<div className="max-w-[270px] ">
+			<div className="bg-white-smoke px-10 py-[35px] relative rounded-md">
 				<div className="bg-gino-red text-white text-[12px] px-3 py-2 absolute top-3 left-3 rounded-md">
 					- 40%
 				</div>
@@ -27,6 +28,9 @@ const ProductCard = () => {
 				</div>
 				<div className="w-[172px] h-[152px] relative mx-auto py-[35px] px-10">
 					<Image src={joystickImage} fill alt="image of a joystick" />
+				</div>
+				<div className="absolute bottom-0 w-full left-0 hover:visible hidden transform -translate-x-1/2 opacity-0 group-hover:opacity-100">
+					<AddToCartButton />
 				</div>
 			</div>
 
