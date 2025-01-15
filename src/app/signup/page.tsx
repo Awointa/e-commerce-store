@@ -1,5 +1,5 @@
 import Link from "next/link";
-import HeroImage from "./assets/hero-image.svg";
+import HeroImage from "../assets/hero-image.svg";
 import Image from "next/image";
 
 export default function page() {
