@@ -12,7 +12,9 @@ export default {
 			colors: {
 				"white-smoke": "#F5F5F5",
 				"ash-smoke": "#7D8184",
+				"dark-ash-smoke": "#2F2E30",
 				"gino-red": "#DB4444",
+				"lemon-green": "#00FF66",
 			},
 		},
 	},
