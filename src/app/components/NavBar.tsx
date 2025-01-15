@@ -1,5 +1,5 @@
 import CartIcon from "../../../svgs/CartIcon";
-import HeartIcon from "../../../svgs/HeartIcon";
+import HeartIcon from "../../../svgs/WishListIcon";
 import Logo from "../../../svgs/Logo";
 import SearchBar from "./SearchBar";
 
