@@ -1,4 +1,4 @@
-const FillEyeIcon = () => {
+const ViewIcon = () => {
 	return (
 		<svg
 			width="24"
@@ -24,4 +24,4 @@ const FillEyeIcon = () => {
 		</svg>
 	);
 };
-export default FillEyeIcon;
+export default ViewIcon;

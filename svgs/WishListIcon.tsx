@@ -1,4 +1,4 @@
-const HeartIcon = () => {
+const WishListIcon = () => {
 	return (
 		<svg
 			width="32"
@@ -18,4 +18,4 @@ const HeartIcon = () => {
 	);
 };
 
-export default HeartIcon;
+export default WishListIcon;
