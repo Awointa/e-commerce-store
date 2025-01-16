@@ -2,6 +2,7 @@ import CartIcon from "../../../svgs/CartIcon";
 import HeartIcon from "../../../svgs/WishListIcon";
 import Logo from "../../../svgs/Logo";
 import SearchBar from "./SearchBar";
+import UserIcon from "../../../svgs/UserIcon";
 
 export default function NavBar() {
 	return (
@@ -17,9 +18,12 @@ export default function NavBar() {
 			</div>
 			<div className="flex gap-6">
 				<SearchBar />
-				<div className="flex gap-4">
+				<div className="flex items-center gap-4">
 					<HeartIcon />
 					<CartIcon />
+					<span className="rounded-full bg-gino-red p-1">
+						<UserIcon />
+					</span>
 				</div>
 			</div>
 		</nav>
