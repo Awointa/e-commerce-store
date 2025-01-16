@@ -13,7 +13,7 @@ const WishListProductCard = () => {
 					- 35%
 				</div>
 				<div className="absolute top-3 right-3">
-					<span className="p-[10px] bg-white rounded-full flex items-center justify-center cursor">
+					<span className=" bg-white rounded-full flex items-center justify-center cursor">
 						<DeleteIcon />
 					</span>
 				</div>
