@@ -26,14 +26,14 @@ function ImageSlider({ imageUrls }: ImageSliderProps) {
 
 	return (
 		<div className="pt-11 pl-10 ">
-			<div className="relative w-full h-[600px] md:h-96 lg:h-[500px] ">
+			<div className="relative w-full h md:h-96 h-[500px] ">
 				{imageUrls.map((url, index) => (
 					<Image
 						key={index}
 						src={url}
 						fill
 						alt={`slide${imageIndex}`}
-						className="object-fit"
+						className="object-fit max-w-full aspect-auto"
 					/>
 				))}
 			</div>
