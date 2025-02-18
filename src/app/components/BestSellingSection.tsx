@@ -8,7 +8,7 @@ const BestSellingSection = () => {
 			<SectionLabel text="This Month" />
 			<div className="pt-3 flex items-center justify-between">
 				<h4 className="text-4xl font-bold">Best Selling Products</h4>
-				<PrimaryButton text="View All" />
+				<PrimaryButton text="View All" type=""/>
 			</div>
 			<div className="pt-[60px]">
 				<ProductCardSlider />

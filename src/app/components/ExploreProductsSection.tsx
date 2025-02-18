@@ -6,7 +6,7 @@ import PrimaryButton from "./PrimaryButton";
 
 const ExploreProductsSection = () => {
 	return (
-		<section className="pt-[71px] pb-[140px] flex flex-col">
+		<section className="pt-20 pb-[140px] flex flex-col">
 			<SectionLabel text="Our products" />
 			<div className="pt-3 flex items-center justify-between">
 				<h4 className="text-4xl font-bold">Explore Our Products</h4>
@@ -19,7 +19,7 @@ const ExploreProductsSection = () => {
 				<ExploreProductsCard />
 			</div>
 			<div className="mx-auto py-[60px]">
-				<PrimaryButton text="view all products" />
+				<PrimaryButton text="view all products" type=""/>
 			</div>
 		</section>
 	);
