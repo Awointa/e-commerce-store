@@ -28,7 +28,7 @@ function page() {
 			<FlashSalesSection />
 			<CategoriesSection />
 			<BestSellingSection />
-			<div className="pt-40">
+			<div className="pt-20">
 				{" "}
 				<FeatureBanner />
 			</div>
