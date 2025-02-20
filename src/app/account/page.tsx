@@ -3,7 +3,7 @@ import PrimaryButton from "../components/PrimaryButton";
 
 const page = () => {
 	return (
-		<div className="mt-20 mx-[135px] mb-36">
+		<div className="mt-20 mx-[135px] mb-36 ">
 			<div className="flex justify-between items-center">
 				<nav>
 					<Link href="/">Home</Link>
@@ -17,22 +17,31 @@ const page = () => {
 				</div>
 			</div>
 
-			<div className="flex justify-between mt-20">
-				<div className="">
+			<div className="flex mt-20 justify-between w-full">
+				<div className="w-fit">
 					<div>
 						<h4 className="font-semibold">Manage my Account</h4>
-						<ul className="pl-9 mt-4 flex flex-col gap-2">
-							<li>My Profile</li>
-							<li>Address Book</li>
-							<li>My Payment Options</li>
+						<ul className="pl-9 mt-4 flex flex-col gap-2 text-ash-smoke">
+							<li className="hover:text-gino-red cursor-pointer ">
+								My Profile
+							</li>
+							<li className="hover:text-gino-red cursor-pointer ">
+								Address Book
+							</li>
+							<li className="hover:text-gino-red cursor-pointer ">
+								My Payment Options
+							</li>
 						</ul>
 					</div>
 					<div className="mt-6">
 						<h4 className="font-semibold">My Orders</h4>
-						<ul className="pl-9  mt-4 flex flex-col gap-2">
-							<li>My Returns</li>
-							<li>My Cancelations</li>
-							<li>My Payment Options</li>
+						<ul className="pl-9  mt-4 flex flex-col gap-2 text-ash-smoke">
+							<li className="hover:text-gino-red cursor-pointer ">
+								My Returns
+							</li>
+							<li className="hover:text-gino-red cursor-pointer ">
+								Cancelations
+							</li>
 						</ul>
 					</div>
 					<div className=" mt-6">
@@ -41,7 +50,7 @@ const page = () => {
 						</Link>
 					</div>
 				</div>
-				<div className="mt-4 px-20 py-10 flex flex-col">
+				<div className="px-20 py-10 flex flex-col shadow-md rounded-sm">
 					<h4 className="text-xl text-gino-red">Edit your profile</h4>
 					<div className="mt-4 grid grid-cols-2 grid-rows-2 gap-x-[50px] gap-y-6">
 						<div className="flex flex-col gap-2">
@@ -74,7 +83,7 @@ const page = () => {
 							<input
 								type="text"
 								placeholder="123, Awolowo way, Ikeja, Lagos"
-								className="bg-white-smoke rounded-sm border-none"
+								className="bg-white-smoke rounded-sm border-none pl-6 py-[13px]"
 							/>
 						</div>
 					</div>
