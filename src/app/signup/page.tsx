@@ -4,12 +4,12 @@ import Image from "next/image";
 
 export default function page() {
 	return (
-		<div>
-			<div className="grid grid-cols-[1fr_auto] pt-[60px] pb-[140px] pr-[135px] gap-[129px]">
-				<div className="w-full h-[781px] bg-[#CBE4E8] flex  items-end">
-					<Image src={HeroImage} alt="hero image" />
+		<div className="flex justify-center items-center md:block">
+			<div className="flex py-16 md:pt-[60px] md:pb-[140px] md:pr-[135px] md:gap-52">
+				<div className="hidden lg:block">
+					<Image src={HeroImage} alt="hero image"/>
 				</div>
-				<div className="flex items-center w-[371px]">
+				<div className="flex items-center">
 					<div className="flex flex-col">
 						<h2 className="text-4xl font-medium">Create an account</h2>
 						<p className="text-base pt-6">Enter your details below</p>
