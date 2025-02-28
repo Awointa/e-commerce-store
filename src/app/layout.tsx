@@ -10,7 +10,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className="bg-white grid grid-rows-[auto_1fr_auto] h-screen">
+			<body className="bg-white grid grid-rows-[auto_1fr_auto] h-screen text-sm">
 				<header>
 					<AnnouncementBar />
 					<NavBar />
