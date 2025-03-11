@@ -1,6 +1,6 @@
-import ArrowButton from "./ArrowButton";
+import ArrowButton from "../ui/ArrowButton";
 import CategoriesSlider from "./CategoriesSlider";
-import SectionLabel from "./SectionLabel";
+import SectionLabel from "../shared/SectionLabel";
 
 const CategoriesSection = () => {
 	return (

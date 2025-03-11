@@ -1,5 +1,5 @@
-import PrimaryButton from "../components/PrimaryButton";
-import SectionLabel from "../components/SectionLabel";
+import PrimaryButton from "../components/ui/Button";
+import SectionLabel from "../components/shared/SectionLabel";
 import WishListProductCard from "../components/WishListProductCard";
 
 const page = () => {

@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 
-import AddToCartButton from "./AddToCartButton";
+import AddToCartButton from "./cart/AddToCartButton";
 import DeleteIcon from "../../../svgs/DeleteIcon";
 import ViewIcon from "../../../svgs/ViewIcon";
 
 import joystickImage from "./ProductImages/frame_611.png";
-import StarRating from "./StarRating";
+import StarRating from "./ui/StarRating";
 
 interface Props {
 	type: string;

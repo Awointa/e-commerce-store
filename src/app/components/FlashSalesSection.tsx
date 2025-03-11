@@ -1,7 +1,7 @@
-import ArrowButton from "./ArrowButton";
-import ProductCardSlider from "./ProductCardSlider";
-import SectionLabel from "./SectionLabel";
-import PrimaryButton from "./PrimaryButton";
+import ArrowButton from "./ui/ArrowButton";
+import ProductCardSlider from "./products/ProductCardSlider";
+import SectionLabel from "./shared/SectionLabel";
+import PrimaryButton from "./ui/Button";
 
 const FlashSalesSection = () => {
 	return (

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import CartItem from "../components/CartItem";
-import PrimaryButton from "../components/PrimaryButton";
+import CartItem from "../components/cart/CartItem";
+import PrimaryButton from "../components/ui/Button";
 import PrimaryLink from "../components/PrimaryLink";
 
 const page = () => {

@@ -1,12 +1,12 @@
 "use client";
 
-import DogFeed from "./ExploreProductImages/pro1.png";
-import AddToCartButton from "./AddToCartButton";
+import DogFeed from "../ExploreProductImages/pro1.png";
+import AddToCartButton from "../cart/AddToCartButton";
 
-import StarRating from "./StarRating";
+import StarRating from "../ui/StarRating";
 
-import WishListIcon from "../../../svgs/WishListIcon";
-import ViewIcon from "../../../svgs/ViewIcon";
+import { Heart } from "lucide-react";
+import { Eye } from "lucide-react";
 
 import Image from "next/image";
 
@@ -19,10 +19,10 @@ const ExploreProductsCard = () => {
 				</div>
 				<div className="flex flex-col gap-2 absolute top-3 right-3">
 					<span className="p-[10px] bg-white rounded-full flex items-center justify-center">
-						<WishListIcon />
+						<Heart />
 					</span>
 					<span className="p-[10px] bg-white rounded-full flex items-center justify-center">
-						<ViewIcon />
+						<Eye />
 					</span>
 				</div>
 				<div className="w-fit h-[152px] relative mx-auto py-[35px] px-10 ">

@@ -1,8 +1,8 @@
 import React from "react";
-import SectionLabel from "./SectionLabel";
-import ArrowButton from "./ArrowButton";
+import SectionLabel from "../shared/SectionLabel";
+import ArrowButton from "../ui/ArrowButton";
 import ExploreProductsCard from "./ExploreProductsCard";
-import PrimaryButton from "./PrimaryButton";
+import PrimaryButton from "../ui/Button";
 
 const ExploreProductsSection = () => {
 	return (
@@ -19,7 +19,7 @@ const ExploreProductsSection = () => {
 				<ExploreProductsCard />
 			</div>
 			<div className="mx-auto py-[60px]">
-				<PrimaryButton text="view all products" type=""/>
+				<PrimaryButton text="view all products" type="" />
 			</div>
 		</section>
 	);

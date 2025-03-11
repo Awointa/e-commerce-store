@@ -10,6 +10,9 @@ export default {
 	theme: {
 		borderWidth: { "0.5": "0.5px" },
 		extend: {
+			fontFamily: {
+				"poppins": ["Poppins", "sans-serif"],
+			},
 			colors: {
 				"white-smoke": "#F5F5F5",
 				"ash-smoke": "#7D8184",

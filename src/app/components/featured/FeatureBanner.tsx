@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Frame1 from "../assets/Frame-1.png";
+const Frame1 = "/banners/Frame-1.png"
 
 const FeatureBanner = () => {
 	return (

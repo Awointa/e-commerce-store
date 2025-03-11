@@ -1,7 +1,7 @@
 import "./globals.css";
-import AnnouncementBar from "./components/AnnouncementBar";
+import AnnouncementBar from "./components/layout/AnnouncementBar";
 import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
+import Footer from "./components/layout/Footer";
 
 export default function RootLayout({
 	children,
@@ -10,7 +10,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className="bg-white grid grid-rows-[auto_1fr_auto] h-screen">
+			<body className="bg-white grid grid-rows-[auto_1fr_auto] h-screen text-sm">
 				<header>
 					<AnnouncementBar />
 					<NavBar />
