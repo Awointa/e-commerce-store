@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import forms from "@tailwindcss/forms";
 
 export default {
 	content: [
@@ -14,7 +15,6 @@ export default {
 			},
 			colors: {
 				"white-smoke": "#F5F5F5",
-				"white-smoke-2": "#F2F2F2",
 				"ash-smoke": "#7D8184",
 				"dark-ash-smoke": "#2F2E30",
 				"gino-red": "#DB4444",
@@ -22,6 +22,5 @@ export default {
 			},
 		},
 	},
-
-	plugins: [],
+	plugins: [forms],
 } satisfies Config;

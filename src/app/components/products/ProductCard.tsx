@@ -4,12 +4,12 @@ import React from "react";
 
 import Image from "next/image";
 
-import joystickImage from "./ProductImages/frame_611.png";
+import joystickImage from "../ProductImages/frame_611.png";
 
-import StarRating from "./StarRating";
-import HeartIcon from "../../../svgs/WishListIcon";
-import FillEyeIcon from "../../../svgs/ViewIcon";
-import AddToCartButton from "./AddToCartButton";
+import StarRating from "../ui/StarRating";
+import { Heart } from "lucide-react";
+import { Eye } from "lucide-react";
+import { ShoppingCart } from "lucide-react";
 
 const ProductCard = () => {
 	return (
@@ -20,17 +20,17 @@ const ProductCard = () => {
 				</div>
 				<div className="flex flex-col gap-2 absolute top-3 right-3">
 					<span className="p-[10px] bg-white rounded-full flex items-center justify-center">
-						<HeartIcon />
+						<Heart />
 					</span>
 					<span className="p-[10px] bg-white rounded-full flex items-center justify-center">
-						<FillEyeIcon />
+						<Eye />
 					</span>
 				</div>
 				<div className="w-[172px] h-[152px] relative mx-auto py-[35px] px-10">
 					<Image src={joystickImage} fill alt="image of a joystick" />
 				</div>
 				<div className="absolute bottom-0 w-full left-0 hover:visible hidden transform -translate-x-1/2 opacity-0 group-hover:opacity-100">
-					<AddToCartButton />
+					<ShoppingCart />
 				</div>
 			</div>
 

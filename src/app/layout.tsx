@@ -1,7 +1,7 @@
 import "./globals.css";
-import AnnouncementBar from "./components/AnnouncementBar";
+import AnnouncementBar from "./components/layout/AnnouncementBar";
 import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
+import Footer from "./components/layout/Footer";
 
 export default function RootLayout({
 	children,

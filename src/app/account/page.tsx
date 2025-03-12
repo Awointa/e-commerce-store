@@ -1,5 +1,5 @@
 import Link from "next/link";
-import PrimaryButton from "../components/PrimaryButton";
+import PrimaryButton from "../components/ui/Button";
 
 const page = () => {
 	return (

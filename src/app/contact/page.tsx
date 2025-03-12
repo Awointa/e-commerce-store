@@ -1,6 +1,6 @@
 import { BsTelephone } from "react-icons/bs";
 import { PiEnvelopeSimpleThin } from "react-icons/pi";
-import PrimaryButton from "../components/PrimaryButton";
+import PrimaryButton from "../components/ui/Button";
 
 const page = () => {
 	return (

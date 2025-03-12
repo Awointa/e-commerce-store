@@ -1,4 +1,4 @@
-import DropDownArrow from "../../../svgs/DropDownArrow";
+import DropDownArrow from "../../../../svgs/DropDownArrow";
 
 const Sidebar = () => {
 	return (

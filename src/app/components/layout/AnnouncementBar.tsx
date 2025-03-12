@@ -1,4 +1,4 @@
-import LanguageOptions from "./LanguageOptions";
+import LanguageOptions from "../LanguageOptions";
 
 export default function announcementBar() {
 	return (
