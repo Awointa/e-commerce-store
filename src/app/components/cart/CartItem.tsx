@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import monitor from "../assets/monitor.png";
+import monitor from "../../assets/monitor.png";
 
 const CartItem = () => {
 	return (

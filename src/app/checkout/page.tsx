@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import VisaIcon from "../assets/Visa.png";
-import MastercardIcon from "../assets/Mastercard.png";
+// import VisaIcon from "../../assets";
+import MastercardIcon from "../../app/assets/Mastercard.png";
 
 import { CheckoutItem } from "./CheckoutItem";
 

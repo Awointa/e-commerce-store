@@ -1,19 +1,8 @@
-<<<<<<< HEAD
-const page = () => {
-	return (
-		<div className="mt-29 mx-[135px] mb-36">
-			<div className="flex text-sm">
-				<div>Home</div>
-				<span className="px-3 ">/</span>
-				<div>About</div>
-			</div>
-=======
-import Image from "next/image";
-
 import { AiOutlineShop } from "react-icons/ai";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
 import { RiShoppingBag4Line } from "react-icons/ri";
 import { GrMoney } from "react-icons/gr";
+import Image from "next/image";
 
 // Images
 import aboutHeroImage from "../assets/portrait-two-african-females.png";
@@ -122,7 +111,6 @@ const page = () => {
 			<section>
 				<BenefitsSection />
 			</section>
->>>>>>> 75fd2c464f3874c04a09f1037ed74b0b23039098
 		</div>
 	);
 };
