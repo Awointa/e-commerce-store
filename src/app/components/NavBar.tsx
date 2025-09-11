@@ -7,17 +7,39 @@ import MallBagIcon from "../../../svgs/MallBagIcon";
 import CancelIcon from "../../../svgs/CancelIcon";
 import ReviewsIcon from "../../../svgs/ReviewsIcon";
 import LogoutIcon from "../../../svgs/LogoutIcon";
+import Link from "next/link";
+import {v4  as uuidv4} from 'uuid';
 
 export default function NavBar() {
+
+	const navItems = [{
+		id: uuidv4(),
+		item: "Home",
+		link: "/"
+	},
+	{
+		id: uuidv4(),
+		item:"Contact",
+		link: "/contact"
+	},
+	{
+		id: uuidv4(),
+		item:"About",
+		link:"/about"
+	},
+	{
+		id: uuidv4(),
+		item:"Sign Up",
+		link: "/signup"
+	}
+]
+
 	return (
 		<nav className="flex items-center justify-between w-full px-6 md:px-12 lg:px-[135px] pt-6 md:pt-8 lg:pt-10 pb-4  border-b-0.5 border-gray-300 bg-white">
 			<Logo />
 			<div className="hidden md:flex">
 				<ul className="flex flex-row gap-6 md:gap-8 lg:gap-12 text-sm md:text-base">
-					<li className="cursor-pointer">Home</li>
-					<li className="cursor-pointer">Contact</li>
-					<li className="cursor-pointer">About</li>
-					<li className="cursor-pointer">Sign Up</li>
+					{navItems.map(item => <li className="cursor-pointer" key={item.id}><Link href={item.link}>{item.item}</Link></li>)}		
 				</ul>
 			</div>
 			<div className="flex gap-4 md:gap-6 items-center">
