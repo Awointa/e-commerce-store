@@ -88,7 +88,7 @@ const Footer = () => {
 							/>
 						</div>
 					</div>
-					<div className="flex justify-center gap-4">
+					<div className="flex lg:justify-center gap-4">
 						<Facebook />
 						<Twitter />
 						<Instagram />
