@@ -12,103 +12,132 @@ import BenefitsSection from "../components/BenefitsSection";
 import StaffCard from "./StaffCard";
 
 const page = () => {
+	const statsData = [
+		{
+			icon: AiOutlineShop,
+			number: "10.5k",
+			description: "Sellers active on our site",
+			id: 1
+		},
+		{
+			icon: RiMoneyDollarCircleLine,
+			number: "33k",
+			description: "Monthly Product Sale",
+			id: 2
+		},
+		{
+			icon: RiShoppingBag4Line,
+			number: "45.5k",
+			description: "Customers active on our site",
+			id: 3
+		},
+		{
+			icon: GrMoney,
+			number: "25k",
+			description: "Annual gross sale on our site",
+			id: 4
+		}
+	];
+
 	return (
-		<div className="mt-20  mb-36">
-			<ul className="mx-32 flex gap-2">
-				<li>Home</li>
-				<li>/</li>
-				<li>About</li>
-			</ul>
-			<section className="mt-11 ml-32 grid grid-cols-1 md:grid-cols-2 gap-16 items-center relative">
-				<div className="p-7">
-					<h2 className="text-5xl font-semibold">Our Story</h2>
-					<div className="mt-10 space-y-4 text-gray-600 font-poppins">
-						<p>
-							Launced in 2015, Exclusive is South Asia’s premier online shopping
-							makterplace with an active presense in Bangladesh. Supported by
-							wide range of tailored marketing, data and service solutions,
-							Exclusive has 10,500 sallers and 300 brands and serves 3 millioons
-							customers across the region.{" "}
+		<div className="min-h-screen">
+			{/* Container with responsive padding */}
+			<div className="px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-32">
+				{/* Breadcrumb */}
+				<nav className="pt-6 md:pt-12 lg:pt-20 mb-6 md:mb-11">
+					<ul className="flex items-center gap-2 text-sm md:text-base text-gray-600">
+						<li className="hover:text-gray-800 transition-colors cursor-pointer">Home</li>
+						<li>/</li>
+						<li className="text-gray-800 font-medium">About</li>
+					</ul>
+				</nav>
+
+				{/* Hero Section */}
+				<section className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16 md:mb-24 lg:mb-36">
+					{/* Text Content */}
+					<div className="order-2 lg:order-1 space-y-6 md:space-y-8 lg:space-y-10">
+						<h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-gray-900 leading-tight">
+							Our Story
+						</h1>
+						<div className="space-y-4 md:space-y-6 text-gray-600 leading-relaxed">
+							<p className="text-base md:text-lg">
+								Launched in 2015, Exclusive is South Asia's premier online shopping
+								marketplace with an active presence in Bangladesh. Supported by a
+								wide range of tailored marketing, data and service solutions,
+								Exclusive has 10,500 sellers and 300 brands and serves 3 million
+								customers across the region.
+							</p>
+							<p className="text-base md:text-lg">
+								Exclusive has more than 1 Million products to offer, growing at a
+								very fast pace. Exclusive offers a diverse assortment in categories
+								ranging from consumer electronics to fashion and lifestyle products.
+							</p>
+						</div>
+					</div>
+
+					{/* Hero Image */}
+					<div className="order-1 lg:order-2 relative">
+						<div className="aspect-[4/3] md:aspect-square lg:aspect-[4/3] xl:aspect-square relative rounded-lg overflow-hidden shadow-2xl">
+							<Image
+								src={aboutHeroImage}
+								alt="Two African females representing our diverse community"
+								className="object-cover w-full h-full"
+								priority
+							/>
+						</div>
+					</div>
+				</section>
+
+				{/* Statistics Section */}
+				<section className="mb-16 md:mb-24 lg:mb-36">
+					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+						{statsData.map((stat) => {
+							const IconComponent = stat.icon;
+							return (
+								<div
+									key={stat.id}
+									className="group bg-white border border-gray-200 rounded-lg p-6 md:p-8 text-center hover:bg-red-500 hover:text-white hover:border-red-500 transition-all duration-300 cursor-pointer transform hover:scale-105 hover:shadow-lg"
+								>
+									{/* Icon Container */}
+									<div className="flex justify-center mb-4 md:mb-6">
+										<div className="h-16 w-16 md:h-20 md:w-20 rounded-full bg-gray-200 group-hover:bg-white/20 flex items-center justify-center transition-colors duration-300">
+											<div className="h-12 w-12 md:h-14 md:w-14 rounded-full bg-black group-hover:bg-white flex items-center justify-center transition-colors duration-300">
+												<IconComponent className="text-white group-hover:text-red-500 w-6 h-6 md:w-8 md:h-8 transition-colors duration-300" />
+											</div>
+										</div>
+									</div>
+
+									{/* Statistics Content */}
+									<div className="space-y-2 md:space-y-3">
+										<div className="text-2xl md:text-3xl font-bold text-gray-900 group-hover:text-white transition-colors duration-300">
+											{stat.number}
+										</div>
+										<p className="text-sm md:text-base text-gray-600 group-hover:text-white/90 transition-colors duration-300 leading-relaxed">
+											{stat.description}
+										</p>
+									</div>
+								</div>
+							);
+						})}
+					</div>
+				</section>
+
+				{/* Staff Section */}
+				<section className="mb-16 md:mb-24 lg:mb-36">
+					<div className="text-center mb-8 md:mb-12">
+						<h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 mb-4">
+							Meet Our Team
+						</h2>
+						<p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
+							Our dedicated team of professionals is committed to providing you with the best shopping experience.
 						</p>
-						<p>
-							Exclusive has more than 1 Million products to offer, growing at a
-							very fast. Exclusive offers a diverse assotment in categories
-							ranging from consumer.
-						</p>
 					</div>
-				</div>
-				<div className="relative aspect-[4/3] md:aspect-square">
-					<Image
-						src={aboutHeroImage}
-						alt="hero image"
-						className="object-cover h-full"
-					/>
-				</div>
-			</section>
+					<StaffCard />
+				</section>
+			</div>
 
-			{/*section 2  */}
-			<section className="mt-36 mx-[135px] flex flex-col md:flex-row justify-between text-base gap-6">
-				{/* Individual cards */}
-				{/* Card 1 */}
-				<div className="flex-grow flex flex-col items-center justify-center gap-6 border-0.5 border-ash-smoke p-4 w-full md:w-auto rounded-sm hover:bg-gino-red hover:text-white cursor-pointer">
-					<div className="h-20 w-20 rounded-full bg-gray-300 flex items-center justify-center ">
-						<div className="h-14 w-14 rounded-full bg-black flex items-center justify-center">
-							<AiOutlineShop className="text-white w-10 h-10" />
-						</div>
-					</div>
-					<div className="flex-grow flex flex-col items-center justify-center gap-3">
-						<span className="text-3xl font-semibold">10.5k</span>
-						<p className="text-center">amount of stuff sold</p>
-					</div>
-				</div>
-
-				{/* Card 2 */}
-				<div className="flex-grow flex flex-col items-center justify-center gap-6 border-0.5 border-ash-smoke p-4 w-full md:w-auto rounded-sm hover:bg-gino-red hover:text-white cursor-pointer">
-					<div className="h-20 w-20 rounded-full bg-gray-300 flex items-center justify-center">
-						<div className="h-14 w-14 rounded-full bg-black flex items-center justify-center">
-							<RiMoneyDollarCircleLine className="text-white w-10 h-10" />
-						</div>
-					</div>
-					<div className="flex-grow flex flex-col items-center justify-center gap-3">
-						<span className="text-3xl font-semibold">33k</span>
-						<p className="text-center">Monthly Product Sale</p>
-					</div>
-				</div>
-
-				{/* Card 3 */}
-				<div className="flex-grow flex flex-col items-center justify-center gap-6 border-0.5 border-ash-smoke p-4 w-full md:w-auto rounded-sm hover:bg-gino-red hover:text-white cursor-pointer">
-					<div className="h-20 w-20 rounded-full bg-gray-300 flex items-center justify-center">
-						<div className="h-14 w-14 rounded-full bg-black flex items-center justify-center">
-							<RiShoppingBag4Line className="text-white w-10 h-10" />
-						</div>
-					</div>
-					<div className="flex flex-col items-center justify-center gap-3">
-						<span className="text-3xl font-semibold">45.5k</span>
-						<p className="text-center">Customer active in our site</p>
-					</div>
-				</div>
-
-				{/* Card 4 */}
-				<div className="flex-grow flex flex-col items-center justify-center gap-6 border-0.5 border-ash-smoke p-4 w-full md:w-auto rounded-sm hover:bg-gino-red hover:text-white cursor-pointer">
-					<div className="h-20 w-20 rounded-full bg-gray-300 flex items-center justify-center">
-						<div className="h-14 w-14 rounded-full bg-black flex items-center justify-center">
-							<GrMoney className="text-white w-10 h-10 font-light" />
-						</div>
-					</div>
-					<div className="flex flex-col items-center justify-center gap-3">
-						<span className="text-3xl font-semibold">25k</span>
-						<p className="text-center">Annual gross sale in our site</p>
-					</div>
-				</div>
-			</section>
-
-			{/* section 3 */}
-			<section className="mt-36 mx-[135px]">
-				<StaffCard />
-			</section>
-
-			{/* section 4 */}
-			<section>
+			{/* Benefits Section - Full Width */}
+			<section className="bg-gray-50">
 				<BenefitsSection />
 			</section>
 		</div>
