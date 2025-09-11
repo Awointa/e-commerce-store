@@ -15,7 +15,7 @@ const AppStoreImage = "/footerImages/appstore.svg";
 const Footer = () => {
 	return (
 		<div className="bg-black grid grid-rows-[1fr_auto] px-6 md:px-16 lg:px-[135px]">
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 w-full pt-10 md:pt-16 lg:pt-20 pb-10 md:pb-16 lg:pb-20 content-center justify-items-center gap-6 md:gap-12 lg:gap-20">
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 w-full pt-10 md:pt-16 lg:pt-20 pb-10 md:pb-16 lg:pb-20 content-center justify-items-start gap-6 md:gap-12 lg:gap-20">
 				{/* Column 1 */}
 				<div className="text-white-smoke flex flex-col gap-4">
 					<div className="flex flex-col gap-4 md:gap-6">
@@ -69,7 +69,7 @@ const Footer = () => {
 							<Image
 								src="/footerImages/Qr-Code.svg"
 								alt="QR Code"
-								width={80}
+								width={100}
 								height={80}
 							/>
 						</div>
