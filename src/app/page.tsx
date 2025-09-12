@@ -14,7 +14,7 @@ import ExploreProductsSection from "./components/exploreProducts/ExploreProducts
 import FeaturedSection from "./components/featured/FeaturedSection";
 import BenefitsSection from "./components/BenefitsSection";
 
-const images = [slide1, slide2, slide3];
+const images = [slide1.src, slide2.src, slide3.src];
 
 function page() {
 	return (
